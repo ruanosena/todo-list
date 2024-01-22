@@ -1,0 +1,24 @@
+.header {
+	background-color: var(--gray-700);
+	padding: 4.5rem 0 5rem;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+.logoImage {
+	margin-right: 0.75rem;
+	margin-top: 0.625rem;
+}
+.logoText {
+	font-size: 2.5rem;
+	font-weight: 900;
+}
+.logoText > span:first-of-type {
+	color: var(--blue);
+}
+.logoText > span {
+	color: var(--purple-dark);
+}

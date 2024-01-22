@@ -1,0 +1,73 @@
+.card {
+	display: flex;
+	padding: 1rem;
+	border: 1px solid var(--gray-400);
+	border-radius: 8px;
+	background-color: var(--gray-500);
+	color: var(--gray-100);
+}
+.cardText {
+	flex: 1;
+	font-size: 0.875rem;
+}
+.cardTextCompleted {
+	flex: 1;
+	font-size: 0.875rem;
+	text-decoration: line-through;
+	color: var(--gray-300);
+}
+.cardCheck {
+	position: relative;
+	margin-right: 0.75rem;
+}
+.cardDelete {
+	margin-left: 0.75rem;
+}
+.checkBox {
+	border-radius: 50%;
+	appearance: none;
+	border: 2px solid var(--blue);
+	width: 1.1rem;
+	height: 1.1rem;
+	cursor: pointer;
+}
+.checkBox:hover {
+	background-color: var(--blue-dark);
+}
+.checkMark {
+	position: absolute;
+	width: 0.75rem;
+	height: 0.75rem;
+	left: calc(0.55rem - 0.375rem);
+	top: calc(0.55rem - 0.375rem);
+	display: none;
+	color: var(--gray-100);
+	cursor: pointer;
+}
+.checkBox:checked {
+	border: 0;
+	background-color: var(--purple-dark);
+}
+.checkBox:checked:hover {
+	background-color: var(--purple);
+}
+.checkBox:checked + .checkMark {
+	display: block;
+}
+.cardDelete {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 0;
+	border-radius: 4px;
+	background-color: transparent;
+	color: var(--gray-300);
+	transition: background-color 0.1s, color 0.1s;
+	cursor: pointer;
+}
+.cardDelete:hover {
+	color: var(--danger);
+	background-color: var(--gray-400);
+}
